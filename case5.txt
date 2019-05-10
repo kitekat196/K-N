@@ -169,14 +169,6 @@ case 5:system("cls");
 							m[5][3] = 4;
 							m[4][5] = 4;
 							m[5][4] = 4;
-							if (x_or_o == 1)
-							{
-								x_or_o = 2;
-							}
-							else
-							{
-								x_or_o = 1;
-							}
 							break;
 						}
 
@@ -193,14 +185,6 @@ case 5:system("cls");
 						m[5][3] = 5;
 						m[4][5] = 6;
 						m[3][5] = 5;
-						if (x_or_o == 1)
-						{
-							x_or_o = 2;
-						}
-						else
-						{
-							x_or_o = 1;
-						}
 						break;
 					}
 				}
