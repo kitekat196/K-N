@@ -1,12 +1,3 @@
-/*
-0 - SPACE;
-1 - x;
-2 - o;
-3 - ;
-4 - BigO;
-5 - BigX;
-6 - SPACE AFTER BigX or BigO
-*/
 #include<iostream>
 using namespace std;
 int main()
@@ -23,17 +14,9 @@ int main()
 	{0,0,0,0,0,0,0,0,0},
 	{0,0,0,0,0,0,0,0,0},
 	};
-	cout << "Choose side  1. o / 2. x" << endl;
+	cout << "Choose side  1. x / 2. o" << endl;
 	int x_or_o;
 	cin >> x_or_o;
-	if (x_or_o == 1)
-	{
-		x_or_o = 2;
-	}
-	else
-	{
-		x_or_o = 1;
-	}
 	int nada = x_or_o;
 	int s;
 	while (true)
@@ -70,15 +53,9 @@ int main()
 				}
 			}cout << endl;
 		}//for
-
 		cin >> answer;
-
-		cout << endl;
-		cout << endl;
-
 		switch (answer)
 		{
-
 		case 1:system("cls");
 		{
 			int count = 0;
@@ -96,10 +73,8 @@ int main()
 			{
 				break;
 			}
-
 			if (m[0][0] != 4 && m[0][0] != 5)
 			{
-
 				for (int i = 0; i < 3; i++)
 				{
 					for (int j = 0; j < 3; j++)
@@ -124,12 +99,9 @@ int main()
 					}
 					cout << "\n\n";
 				}//for
-
-
 				while (x_or_o == nada)
 				{
 					cin >> s;
-
 					if (m[0][0] != 1 && m[0][0] != 2) { if (s == 1) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[0][0] = x_or_o; } }
 					if (m[0][1] != 1 && m[0][1] != 2) { if (s == 2) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[0][1] = x_or_o; } }
 					if (m[0][2] != 1 && m[0][2] != 2) { if (s == 3) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[0][2] = x_or_o; } }
@@ -139,9 +111,6 @@ int main()
 					if (m[2][0] != 1 && m[2][0] != 2) { if (s == 7) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[2][0] = x_or_o; } }
 					if (m[2][1] != 1 && m[2][1] != 2) { if (s == 8) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[2][1] = x_or_o; } }
 					if (m[2][2] != 1 && m[2][2] != 2) { if (s == 9) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[2][2] = x_or_o; } }
-
-					//????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
-
 					if (m[0][0] == 1 && m[0][1] == 1 && m[0][2] == 1 || m[0][0] == 1 && m[1][1] == 1 && m[2][2] == 1 || m[1][0] == 1 && m[1][1] == 1 && m[1][2] == 1 || m[2][0] == 1 && m[2][1] == 1 && m[2][2] == 1 || m[2][0] == 1 && m[1][1] == 1 && m[0][2] == 1 || m[0][1] == 1 && m[1][1] == 1 && m[2][1] == 1 || m[0][2] == 1 && m[1][2] == 1 && m[2][2] == 1 || m[0][0] == 1 && m[1][0] == 1 && m[2][0] == 1)
 					{
 						m[1][1] = 6;
@@ -170,15 +139,11 @@ int main()
 						break;
 					}
 				}
-
-
-
 			}//if(m[0][0] != 4 && m[0][0] != 5)
 			else
 			{
 				break;
 			}
-
 			int count_1 = 0;
 			for (int i = 0; i < 3; i++)
 			{
@@ -202,8 +167,6 @@ int main()
 				}
 				break;
 			}
-
-
 			system("cls");
 			if (m[0][0] != 4 && m[0][0] != 5)
 			{
@@ -234,9 +197,7 @@ int main()
 
 				while (x_or_o != nada)
 				{
-
 					cin >> s;
-
 					if (m[0][0] != 1 && m[0][0] != 2) { if (s == 1) { if (x_or_o == 1) { x_or_o = 2; nada = x_or_o; } else { x_or_o = 1; nada = x_or_o; } m[0][0] = x_or_o; } }
 					if (m[0][1] != 1 && m[0][1] != 2) { if (s == 2) { if (x_or_o == 1) { x_or_o = 2; nada = x_or_o; } else { x_or_o = 1; nada = x_or_o; } m[0][1] = x_or_o; } }
 					if (m[0][2] != 1 && m[0][2] != 2) { if (s == 3) { if (x_or_o == 1) { x_or_o = 2; nada = x_or_o; } else { x_or_o = 1; nada = x_or_o; } m[0][2] = x_or_o; } }
@@ -276,12 +237,9 @@ int main()
 					}
 				}
 			}
-
 			//????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
 			break;
-
 		}//case 1:
-
 		case 2:system("cls");
 		{
 			int count2 = 0;
@@ -325,13 +283,9 @@ int main()
 					}
 					cout << "\n\n";
 				}//for
-
-
 				while (x_or_o == nada)
 				{
 					cin >> s;
-
-
 					if (m[0][3] != 1 && m[0][3] != 2) { if (s == 1) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[0][3] = x_or_o; } }
 					if (m[0][4] != 1 && m[0][4] != 2) { if (s == 2) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[0][4] = x_or_o; } }
 					if (m[0][5] != 1 && m[0][5] != 2) { if (s == 3) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[0][5] = x_or_o; } }
@@ -370,10 +324,7 @@ int main()
 						break;
 					}
 				}
-
 			}//if(m[0][0] != 4 && m[0][0] != 5)
-
-
 			else { break; }
 			int count_2 = 0;
 			for (int i = 0; i < 3; i++)
@@ -398,8 +349,6 @@ int main()
 				}
 				break;
 			}
-
-
 			system("cls");
 			if (m[0][3] != 4 && m[0][3] != 5)
 			{
@@ -430,10 +379,7 @@ int main()
 
 				while (x_or_o != nada)
 				{
-
-					cin >> s;
-
-
+				 	cin >> s;
 					if (m[0][3] != 1 && m[0][3] != 2) { if (s == 1) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[0][3] = x_or_o; } }
 					if (m[0][4] != 1 && m[0][4] != 2) { if (s == 2) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[0][4] = x_or_o; } }
 					if (m[0][5] != 1 && m[0][5] != 2) { if (s == 3) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[0][5] = x_or_o; } }
@@ -474,13 +420,8 @@ int main()
 				}
 
 			}
-
-
-
 			break;
 		}
-
-
 		case 3:system("cls");
 		{
 			int count3 = 0;
@@ -500,7 +441,6 @@ int main()
 			}
 			if (m[0][6] != 4 && m[0][6] != 5)
 			{
-
 				for (int i = 0; i < 3; i++)
 				{
 					for (int j = 6; j < 9; j++)
@@ -528,7 +468,6 @@ int main()
 				while (x_or_o == nada)
 				{
 					cin >> s;
-
 					if (m[0][6] != 1 && m[0][6] != 2) { if (s == 1) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[0][6] = x_or_o; } }
 					if (m[0][7] != 1 && m[0][7] != 2) { if (s == 2) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[0][7] = x_or_o; } }
 					if (m[0][8] != 1 && m[0][8] != 2) { if (s == 3) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[0][8] = x_or_o; } }
@@ -595,7 +534,6 @@ int main()
 			system("cls");
 			if (m[0][6] != 4 && m[0][6] != 5)
 			{
-
 				for (int i = 0; i < 3; i++)
 				{
 					for (int j = 6; j < 9; j++)
@@ -662,13 +600,8 @@ int main()
 					}
 				}
 			}
-
-
 			break;
 		}
-
-
-
 		case 4:system("cls");
 		{
 			 int count4 = 0;
@@ -715,7 +648,6 @@ int main()
 			while (x_or_o == nada)
 				{
 				cin >> s;
-
 				if (m[3][0] != 1 && m[3][0] != 2) { if (s == 1) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[3][0] = x_or_o; } }
 				if (m[3][1] != 1 && m[3][1] != 2) { if (s == 2) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[3][1] = x_or_o; } }
 				if (m[3][2] != 1 && m[3][2] != 2) { if (s == 3) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[3][2] = x_or_o; } }
@@ -754,7 +686,6 @@ int main()
 					break;
 				}
 			}
-
 			}//if(m[0][0] != 4 && m[0][0] != 5)
 			else { break; }
 			system("cls");
@@ -810,7 +741,6 @@ int main()
 			while (x_or_o != nada)
 				{
 				cin >> s;
-
 				if (m[3][0] != 1 && m[3][0] != 2) { if (s == 1) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[3][0] = x_or_o; } }
 				if (m[3][1] != 1 && m[3][1] != 2) { if (s == 2) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[3][1] = x_or_o; } }
 				if (m[3][2] != 1 && m[3][2] != 2) { if (s == 3) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[3][2] = x_or_o; } }
@@ -849,15 +779,9 @@ int main()
 					break;
 				}
 			}
-
 			}
-			
-
-
 			break;
 		}
-
-
 		case 5:system("cls");
 		{
 			int count5 = 0;
@@ -875,7 +799,6 @@ int main()
 			{
 				break;
 			}
-
 			if (m[3][3] != 4 && m[3][3] != 5)
 			{
 				for (int i = 3; i < 6; i++)
@@ -905,8 +828,6 @@ int main()
 				while (x_or_o == nada)
 				{
 					cin >> s;
-
-
 					if (m[3][3] != 1 && m[3][3] != 2) { if (s == 1) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[3][3] = x_or_o; } }
 					if (m[3][4] != 1 && m[3][4] != 2) { if (s == 2) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[3][4] = x_or_o; } }
 					if (m[3][5] != 1 && m[3][5] != 2) { if (s == 3) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[3][5] = x_or_o; } }
@@ -916,7 +837,6 @@ int main()
 					if (m[5][3] != 1 && m[5][3] != 2) { if (s == 7) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[5][3] = x_or_o; } }
 					if (m[5][4] != 1 && m[5][4] != 2) { if (s == 8) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[5][4] = x_or_o; } }
 					if (m[5][5] != 1 && m[5][5] != 2) { if (s == 9) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[5][5] = x_or_o; } }
-
 					if (m[3][3] == 1 && m[3][4] == 1 && m[3][5] == 1 || m[3][3] == 1 && m[4][4] == 1 && m[5][5] == 1 || m[4][3] == 1 && m[4][4] == 1 && m[4][5] == 1 || m[5][3] == 1 && m[5][4] == 1 && m[5][5] == 1 || m[5][3] == 1 && m[4][4] == 1 && m[3][5] == 1 || m[3][4] == 1 && m[4][4] == 1 && m[5][4] == 1 || m[3][5] == 1 && m[4][5] == 1 && m[5][5] == 1 || m[3][3] == 1 && m[4][3] == 1 && m[5][3] == 1)
 					{
 						m[4][4] = 6;
@@ -930,8 +850,6 @@ int main()
 						m[5][4] = 4;
 						break;
 					}
-
-
 					//------------------------------------------------------------------------------------------------------------------------
 					if (m[3][3] == 2 && m[3][4] == 2 && m[3][5] == 2 || m[3][3] == 2 && m[4][4] == 2 && m[5][5] == 2 || m[4][3] == 2 && m[4][4] == 2 && m[4][5] == 2 || m[5][3] == 2 && m[5][4] == 2 && m[5][5] == 2 || m[5][3] == 2 && m[4][4] == 2 && m[3][5] == 2 || m[3][4] == 2 && m[4][4] == 2 && m[5][4] == 2 || m[3][5] == 2 && m[4][5] == 2 && m[5][5] == 2 || m[3][3] == 2 && m[4][3] == 2 && m[5][3] == 2)
 					{
@@ -973,9 +891,6 @@ int main()
 				}
 				break;
 			}
-
-
-
 			if (m[3][3] != 4 && m[3][3] != 5)
 			{
 				for (int i = 3; i < 6; i++)
@@ -1005,8 +920,6 @@ int main()
 				while (x_or_o != nada)
 				{
 					cin >> s;
-
-
 					if (m[3][3] != 1 && m[3][3] != 2) { if (s == 1) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[3][3] = x_or_o; } }
 					if (m[3][4] != 1 && m[3][4] != 2) { if (s == 2) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[3][4] = x_or_o; } }
 					if (m[3][5] != 1 && m[3][5] != 2) { if (s == 3) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[3][5] = x_or_o; } }
@@ -1016,8 +929,6 @@ int main()
 					if (m[5][3] != 1 && m[5][3] != 2) { if (s == 7) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[5][3] = x_or_o; } }
 					if (m[5][4] != 1 && m[5][4] != 2) { if (s == 8) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[5][4] = x_or_o; } }
 					if (m[5][5] != 1 && m[5][5] != 2) { if (s == 9) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[5][5] = x_or_o; } }
-
-
 					if (m[3][3] == 1 && m[3][4] == 1 && m[3][5] == 1 || m[3][3] == 1 && m[4][4] == 1 && m[5][5] == 1 || m[4][3] == 1 && m[4][4] == 1 && m[4][5] == 1 || m[5][3] == 1 && m[5][4] == 1 && m[5][5] == 1 || m[5][3] == 1 && m[4][4] == 1 && m[3][5] == 1 || m[3][4] == 1 && m[4][4] == 1 && m[5][4] == 1 || m[3][5] == 1 && m[4][5] == 1 && m[5][5] == 1 || m[3][3] == 1 && m[4][3] == 1 && m[5][3] == 1)
 					{
 						m[4][4] = 6;
@@ -1031,8 +942,6 @@ int main()
 						m[5][4] = 4;
 						break;
 					}
-
-
 					//------------------------------------------------------------------------------------------------------------------------
 					if (m[3][3] == 2 && m[3][4] == 2 && m[3][5] == 2 || m[3][3] == 2 && m[4][4] == 2 && m[5][5] == 2 || m[4][3] == 2 && m[4][4] == 2 && m[4][5] == 2 || m[5][3] == 2 && m[5][4] == 2 && m[5][5] == 2 || m[5][3] == 2 && m[4][4] == 2 && m[3][5] == 2 || m[3][4] == 2 && m[4][4] == 2 && m[5][4] == 2 || m[3][5] == 2 && m[4][5] == 2 && m[5][5] == 2 || m[3][3] == 2 && m[4][3] == 2 && m[5][3] == 2)
 					{
@@ -1049,13 +958,8 @@ int main()
 					}
 				}
 			}
-
-
-
-
 			break;
 		}
-
 		case 6:system("cls");
 		{
 			int count6 = 0;
@@ -1100,14 +1004,9 @@ int main()
 					}
 					cout << "\n\n";
 				}//for
-
-
 				while (x_or_o == nada)
 				{
 					cin >> s;
-
-
-
 					if (m[3][6] != 1 && m[3][6] != 2) { if (s == 1) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[3][6] = x_or_o; } }
 					if (m[3][7] != 1 && m[3][7] != 2) { if (s == 2) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[3][7] = x_or_o; } }
 					if (m[3][8] != 1 && m[3][8] != 2) { if (s == 3) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[3][8] = x_or_o; } }
@@ -1174,7 +1073,6 @@ int main()
 			}
 			if (m[3][6] != 4 && m[3][6] != 5)
 			{
-
 				for (int i = 3; i < 6; i++)
 				{
 					for (int j = 6; j < 9; j++)
@@ -1199,14 +1097,9 @@ int main()
 					}
 					cout << "\n\n";
 				}//for
-
-
 				while (x_or_o != nada)
 				{
 					cin >> s;
-
-
-
 					if (m[3][6] != 1 && m[3][6] != 2) { if (s == 1) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[3][6] = x_or_o; } }
 					if (m[3][7] != 1 && m[3][7] != 2) { if (s == 2) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[3][7] = x_or_o; } }
 					if (m[3][8] != 1 && m[3][8] != 2) { if (s == 3) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[3][8] = x_or_o; } }
@@ -1246,14 +1139,8 @@ int main()
 					}
 				}
 			}
-
-
-
-
 			break;
 		}
-
-
 		case 7:system("cls");
 		{
 			 int count7 = 0;
@@ -1271,10 +1158,8 @@ int main()
 			{
 				break;
 			}
-			
 			if (m[6][0] != 4 && m[6][0] != 5)
 			{
-
 				for (int i = 6; i < 9; i++)
 				{
 					for (int j = 0; j < 3; j++)
@@ -1303,8 +1188,6 @@ int main()
 				while (x_or_o == nada)
 				{
 				cin >> s;
-
-
 				if (m[6][0] != 1 && m[6][0] != 2) { if (s == 1) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[6][0] = x_or_o; } }
 				if (m[6][1] != 1 && m[6][1] != 2) { if (s == 2) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[6][1] = x_or_o; } }
 				if (m[6][2] != 1 && m[6][2] != 2) { if (s == 3) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[6][2] = x_or_o; } }
@@ -1369,10 +1252,8 @@ int main()
 						}   
 				break;
 			}
-			
 			if (m[6][0] != 4 && m[6][0] != 5)
 			{
-
 				for (int i = 6; i < 9; i++)
 				{
 					for (int j = 0; j < 3; j++)
@@ -1401,8 +1282,6 @@ int main()
 				while (x_or_o != nada)
 				{
 				cin >> s;
-
-
 				if (m[6][0] != 1 && m[6][0] != 2) { if (s == 1) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[6][0] = x_or_o; } }
 				if (m[6][1] != 1 && m[6][1] != 2) { if (s == 2) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[6][1] = x_or_o; } }
 				if (m[6][2] != 1 && m[6][2] != 2) { if (s == 3) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[6][2] = x_or_o; } }
@@ -1442,16 +1321,10 @@ int main()
 				}
 			}
 }
-			
-
-
 			break;
 		}
-
-
 		case 8:system("cls");
 		{
-
 			int count8 = 0;
 			for (int i = 6; i < 9; i++)
 			{
@@ -1493,11 +1366,9 @@ int main()
 					}
 					cout << "\n\n";
 				}//for
-
 				while (x_or_o == nada)
 				{
-				cin >> s;
-
+ 	  			cin >> s;
 				if (m[6][3] != 1 && m[6][3] != 2) { if (s == 1) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[6][3] = x_or_o; } }
 				if (m[6][4] != 1 && m[6][4] != 2) { if (s == 2) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[6][4] = x_or_o; } }
 				if (m[6][5] != 1 && m[6][5] != 2) { if (s == 3) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[6][5] = x_or_o; } }
@@ -1586,11 +1457,9 @@ int main()
 					}
 					cout << "\n\n";
 				}//for
-
 				while (x_or_o != nada)
 				{
 				cin >> s;
-
 				if (m[6][3] != 1 && m[6][3] != 2) { if (s == 1) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[6][3] = x_or_o; } }
 				if (m[6][4] != 1 && m[6][4] != 2) { if (s == 2) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[6][4] = x_or_o; } }
 				if (m[6][5] != 1 && m[6][5] != 2) { if (s == 3) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[6][5] = x_or_o; } }
@@ -1628,11 +1497,8 @@ int main()
 				}
 			}
 			}
-
-
 			break;
 		}
-
 		case 9:system("cls");
 		{
 			int count9 = 0;
@@ -1650,10 +1516,8 @@ int main()
 			{
 				break;
 			}
-
 			if (m[6][6] != 4 && m[6][6] != 5)
 			{
-
 				for (int i = 6; i < 9; i++)
 				{
 					for (int j = 6; j < 9; j++)
@@ -1678,11 +1542,9 @@ int main()
 					}
 					cout << "\n\n";
 				}//for
-
 				while (x_or_o == nada)
 				{
 				cin >> s;
-
 				if (m[6][6] != 1 && m[6][6] != 2) { if (s == 1) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[6][6] = x_or_o; } }
 				if (m[6][7] != 1 && m[6][7] != 2) { if (s == 2) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[6][7] = x_or_o; } }
 				if (m[6][8] != 1 && m[6][8] != 2) { if (s == 3) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[6][8] = x_or_o; } }
@@ -1724,7 +1586,6 @@ int main()
 			}//if(m[0][0] != 4 && m[0][0] != 5)
 			else { break; }
 			system("cls");
-			
 			int count_9 = 0;
 			for (int i = 6; i < 9; i++)
 			{
@@ -1740,10 +1601,8 @@ int main()
 			{
 				break;
 			}
-
 			if (m[6][6] != 4 && m[6][6] != 5)
 			{
-
 				for (int i = 6; i < 9; i++)
 				{
 					for (int j = 6; j < 9; j++)
@@ -1772,7 +1631,6 @@ int main()
 				while (x_or_o != nada)
 				{
 				cin >> s;
-
 				if (m[6][6] != 1 && m[6][6] != 2) { if (s == 1) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[6][6] = x_or_o; } }
 				if (m[6][7] != 1 && m[6][7] != 2) { if (s == 2) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[6][7] = x_or_o; } }
 				if (m[6][8] != 1 && m[6][8] != 2) { if (s == 3) { if (x_or_o == 1) { x_or_o = 2; } else { x_or_o = 1; } m[6][8] = x_or_o; } }
@@ -1814,41 +1672,36 @@ int main()
 		}
     break;
 }
-
-
 		}//switch
-		
-		
-		
-		
  				 if(m[0][0] == 4 && m[3][3] == 4 && m[6][6] == 4 || m[0][6] == 4 && m[3][3] == 4 && m[6][0] == 4 || m[0][0] == 4 && m[0][3] == 4 && m[0][6] == 4 ||m[3][0] == 4 && m[3][3] == 4 && m[3][6] == 4 || m[6][0] == 4 && m[6][3] == 4 && m[6][6] == 4 || m[0][0] == 4 && m[3][0] == 4 && m[6][0] == 4 || m[0][3] == 4 && m[3][3] == 4 && m[6][3] == 4 ||m[0][6] == 4 && m[3][6] == 4 && m[6][6] == 4 )	
 		{
-		 		 
 		 		 system("cls");
-		 		 
-		 		 cout<<"holiki win"<<endl;
+		 		 cout<<endl<<"      holiki win"<<endl<<endl;
 		 		 break;
 	 	}
-	 	if(m[0][0] == 5 && m[3][3] == 5 && m[6][6] == 5 || m[0][6] == 5 && m[3][3] == 5 && m[6][0] == 5 || m[0][0] == 5 && m[0][3] == 5 && m[0][6] == 5 ||m[3][0] == 5 && m[3][3] == 5 && m[3][6] == 5 || m[6][0] == 5 && m[6][3] == 5 && m[6][6] == 5 || m[0][0] == 5 && m[3][0] == 5 && m[6][0] == 5 || m[0][3] == 5 && m[3][3] == 5 && m[6][3] == 5 ||m[0][6] == 5 && m[3][6] == 5 && m[6][6] == 5 )	
-		{
-		 		 
+	 	else if(m[0][0] == 5 && m[3][3] == 5 && m[6][6] == 5 || m[0][6] == 5 && m[3][3] == 5 && m[6][0] == 5 || m[0][0] == 5 && m[0][3] == 5 && m[0][6] == 5 ||m[3][0] == 5 && m[3][3] == 5 && m[3][6] == 5 || m[6][0] == 5 && m[6][3] == 5 && m[6][6] == 5 || m[0][0] == 5 && m[3][0] == 5 && m[6][0] == 5 || m[0][3] == 5 && m[3][3] == 5 && m[6][3] == 5 ||m[0][6] == 5 && m[3][6] == 5 && m[6][6] == 5 )	
+		{	 
 		 		 system("cls");
-		 		 
-		 		 cout<<"krestiki win"<<endl;
+		 		 cout<<endl<<"      krestiki win"<<endl<<endl;
 		 		 break;
 	 	}
-		
+	 	int count_10 = 0;
+			for (int i = 0; i < 9; i++)
+			{
+				for (int j = 0; j < 9; j++)
+				{
+					if (m[i][j] == 0)
+					{
+						count_10++;
+					}
+				}
+			}
+			if (count_10 == 0)
+			{
+			system("cls");
+		 	cout<<"nikto ne win"<<endl;
+				break;
+			}	
 	}//while
-
 	system("pause");
 }
-/*
-0 - SPACE;
-1 - x;
-2 - o;
-3 - ;
-4 - BigO;
-5 - BigX;
-6 - SPACE AFTER BigX or BigO
-*/
-
